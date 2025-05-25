@@ -38,7 +38,7 @@ def count_tsv_rows(input_file="../data/train.tsv"):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='计算 TSV 文件的数据行数。')
-    parser.add_argument('--input', default="../data/simulate_log.tsv", help='输入 TSV 文件路径')
+    parser.add_argument('--input', default="../data/train.tsv", help='输入 TSV 文件路径')
     args = parser.parse_args()
 
     count_tsv_rows(args.input)

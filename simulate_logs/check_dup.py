@@ -32,7 +32,7 @@ def detect_duplicate_end_time(input_file):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='检测 TSV 文件中 end 列的重复行数。')
-    parser.add_argument('--input', default="sorted_by_end.tsv", help='输入 TSV 文件路径（默认 simulate_log.tsv）')
+    parser.add_argument('--input', default="../data/sorted_by_end.tsv", help='输入 TSV 文件路径（默认 simulate_log.tsv）')
     args = parser.parse_args()
 
     duplicate_count = detect_duplicate_end_time(args.input)
